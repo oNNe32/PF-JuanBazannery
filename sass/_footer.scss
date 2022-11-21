@@ -53,6 +53,7 @@ footer {
 
 .address {
     height: 16em;
+    
 
     @include breakpoint(viewMiddle) {
         height: 20em;
@@ -70,7 +71,6 @@ footer {
         display: flex;
         flex-flow: column;
         align-items: center;
-        list-style: none;
     }
 
     &__li {

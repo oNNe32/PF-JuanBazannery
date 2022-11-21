@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIV Faq</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/sass/styles.css">
 
 </head>
+
 <body>
-    <header>  
+    <header>
         <a href="index.html"><img class="logo" src="./media/logo.png" alt="" srcset="">
         </a>
         <div class="menu">
@@ -20,16 +26,120 @@
             <nav class="menu__nav">
                 <div class="menu__courtain"></div>
                 <ul class="menu__ul">
-                <li class="menu__li"><a class="menu__a" href="/index.html">Inicio</a></li>
-                <li class="menu__li"><a class="menu__a" href="/contacto.html">Contacto</a></li>
-                <li class="menu__li"><a class="menu__a" href="/productos.html">Productos</a></li>
-                <li class="menu__li"><a class="menu__a" href="/nosotros.html">Nosotros</a></li>
-                <li class="menu__li"><a class="menu__a" href="/faq.html">Faq</a></li>
-            </ul>
-        </nav>
+                    <li class="menu__li"><a class="menu__a" href="/index.html">Inicio</a></li>
+                    <li class="menu__li"><a class="menu__a" href="/contacto.html">Contacto</a></li>
+                    <li class="menu__li"><a class="menu__a" href="/productos.html">Productos</a></li>
+                    <li class="menu__li"><a class="menu__a" href="/nosotros.html">Nosotros</a></li>
+                    <li class="menu__li"><a class="menu__a" href="/faq.html">Faq</a></li>
+                </ul>
+            </nav>
 
         </div>
     </header>
+    <main>
+        <section class="faq" id="responding">
+            <div class="faq__framing"></div>
+            <div class="faq__cover">
+                <h4 class="faq__title">Respuestas a las Preguntas Frecuentes</h4>
+                <p class="faq__text">Encuentra aquí todas las respuestas que necesitas. Si tu pregunta no se
+                    resuelve, puedes enviarnos un mensaje</p>
+            </div>
+
+            <div class="faq__accordion">
+                <h5 class="faq__lead">Medios de Pago</h5>
+
+                <div class="faq__answer">
+                    <input class="faq__inputs" type="checkbox" name="acord" id="faq1">
+                    <label for="faq1" class="faq__label">¿Qué medios de pago tenemos?</label>
+                    <p class="faq__par"> Los productos se pueden abonar en efectivo transferencia bancaria, en el
+                        acto y contra entrega del producto y/o Mercado Pago. Tu compra va a estar 100% protegida y
+                        te devolveremos el dinero si el producto no es lo que esperabas.Contás con 3 y 6 cuotas sin
+                        interés con tarjetas de crédito Visa, Amex y Mastercard de cualquier banco todos los días.
+                    </p>
+                </div>
+
+                <div class="faq__answer">
+                    <input class="faq__inputs" type="checkbox" name="acord" id="faq2">
+                    <label for="faq2" class="faq__label">¿Cómo recibo la factura?</label>
+                    <p class="faq__par">Puedes dejarnos tu correo al realizar el pedido por whatsapp, la recibirás
+                        vía email en formato PDF.</p>
+                </div>
+
+                <div class="faq__answer">
+                    <input class="faq__inputs" type="checkbox" name="acord" id="faq3">
+                    <label for="faq3" class="faq__label">¿Hay un costo añadido por el envío en moto?</label>
+                    <p class="faq__par">Si, Podrás ver el costo de envío al momento de solicitar el producto por
+                        whatsapp -antes de abonar-.</p>
+                </div>
+            </div>
+
+            <div class="faq__accordion">
+                <h5 class="faq__lead">Envíos</h5>
+
+                <div class="faq__answer">
+                    <input class="faq__inputs" type="checkbox" name="acord" id="faq4">
+                    <label for="faq4" class="faq__label">¿Cuáles son los métodos de envío disponibles?</label>
+                    <p class="faq__par">Para productos de consumo canino podrás solicitar envío a domicilio o
+                        retirar en el local o deposito general.</p>
+                </div>
+
+                <div class="faq__answer">
+                    <input class="faq__inputs" type="checkbox" name="acord" id="faq6">
+                    <label for="faq6" class="faq__label">¿Puedo hacer un pedido y recibirlo el mismo día?</label>
+                    <p class="faq__par">Sí, podes realizar tu pedido el mismo día mientras que lo realices con 5
+                        horas de anticipación a la banda horaria que querés recibirlo en tu domicilio.</p>
+                </div>
+
+                <div class="faq__answer">
+                    <input class="faq__inputs" type="checkbox" name="acord" id="faq9">
+                    <label for="faq9" class="faq__label">¿Puedo cambiar o agregar más productos una vez que confirmé
+                        mi Pedido?</label>
+                    <p class="faq__par">Si, simpre que el despacho ya no haya sido realizado, en ese caso no podemos
+                        evitar.</p>
+                </div>
+
+                <div class="faq__answer">
+                    <input class="faq__inputs" type="checkbox" name="acord" id="faq11">
+                    <label for="faq11" class="faq__label">¿Se puden reprogramar repartos?</label>
+                    <p class="faq__par">Si, se pueden reprogramar repartos hasta con varias semanas de anticipación
+                        y por tiempo indefinido.</p>
+                </div>
+
+                <div class="faq__answer">
+                    <input class="faq__inputs" type="checkbox" name="acord" id="faq12">
+                    <label for="faq12" class="faq__label">¿Se puede cancelar un pedido?</label>
+                    <p class="faq__par"> Sí, podrás cancelar el pedido siempre y cuando no haya sido despachado a tu
+                        domicilio, en ese caso deberás rechazar la entrega. En cualquiera de los dos casos deberás
+                        comunicarte por whatsapp.</p>
+                </div>
+
+                <div class="faq__answer">
+                    <input class="faq__inputs" type="checkbox" name="acord" id="faq13">
+                    <label for="faq13" class="faq__label">¿Qué pasa si no hay nadie en el domicilio al momento de la
+                        entrega del cadete?</label>
+                    <p class="faq__par">Si por algún motivo no pueden concretar la entrega en el primer intento, se
+                        comunicarán telefónicamente para acordar una segunda entrega con día y horario pre-acordado.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="faq__accordion">
+
+                <h5 class="faq__lead">Ingredientes</h5>
+
+                <div class="faq__answer">
+                    <input class="faq__inputs" type="checkbox" name="acord" id="faq18">
+                    <label for="faq18" class="faq__label">¿Los ingredientes son 100% naturales?</label>
+                    <p class="faq__par">Si, los ingredientes son todos naturales hechos con aceite de soja, y cada
+                        vaso/frasco que recibas podras volverlo a usar en caso de quieras pedir mas velas.</p>
+                </div>
+            </div>
+            
+        </section>
+        </section>
+
+    </main>
 
     <footer>
         <div class="sitemap">
@@ -39,12 +149,16 @@
                 <li class="sitemap__li"><a class="sitemap__links" href="/contacto.html">Contacto</a></li>
                 <li class="sitemap__li"><a class="sitemap__links" href="/productos.html">Productos</a></li>
                 <li class="sitemap__li"><a class="sitemap__links" href="/nosotros.html">Nosotros</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="/faq.html">Preguntas?</a></li>
             </ul>
         </div>
 
         <form class="newsletter" action="">
-            <label class="newsletter__label" for="email-news"><h5>Recibir Novedades</h5></label>
-            <input class="newsletter__input" type="email" id="email-news" name="email-news" placeholder="Tú Correo Aquí" required="">
+            <label class="newsletter__label" for="email-news">
+                <h5>Recibir Novedades</h5>
+            </label>
+            <input class="newsletter__input" type="email" id="email-news" name="email-news" placeholder="Tú Correo Aquí"
+                required="">
             <div>
                 <button class="newsletter__btn" type="submit">Subscripción</button>
             </div>
@@ -52,7 +166,8 @@
 
         <div class="social">
             <ul class="social__ul">
-                <li class="social__li"><a class="social__icon" href="https://www.instagram.com/juanbazannery/" aria-describedby="boton-instagram"><i class="fa fa-instagram"></i></a>
+                <li class="social__li"><a class="social__icon" href="https://www.instagram.com/juanbazannery/"
+                        aria-describedby="boton-instagram"><i class="fa fa-instagram"></i></a>
                 </li>
                 <li>
                     <p><a class="social__item" href="http://www.instagram.com/juanbazannery/">Instagram</a></p>
@@ -63,18 +178,25 @@
         <address class="address">
             <h5 class="address__title">Contáctate</h5>
             <ul class="address__ul">
-                <li class="address__li"><p class="address__par">Teléfono Local:</p><h6 class="address__subtitle">022945456767</h6>
+                <li class="address__li">
+                    <p class="address__par">Teléfono Local:</p>
+                    <h6 class="address__subtitle">022945456767</h6>
                 </li>
-                <li class="address__li"><p class="address__par">E-mail:</p><h6 class="address__subtitle">liv@aromas.com</h6>
+                <li class="address__li">
+                    <p class="address__par">E-mail:</p>
+                    <h6 class="address__subtitle">liv@aromas.com</h6>
                 </li>
-                <li class="address__li"><p class="address__par">Whatsapp:</p><h6 class="address__subtitle">0111153756868</h6>
+                <li class="address__li">
+                    <p class="address__par">Whatsapp:</p>
+                    <h6 class="address__subtitle">0111153756868</h6>
                 </li>
             </ul>
         </address>
-        
+
         <div class="copyright">
             <p class="copyright__text">Derechos Reservados © 2022 LIV</p>
         </div>
     </footer>
 </body>
+
 </html>
