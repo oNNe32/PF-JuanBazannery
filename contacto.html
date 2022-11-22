@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,8 +15,9 @@
     <link rel="stylesheet" href="/sass/styles.css">
 
 </head>
+
 <body>
-    <header>  
+    <header>
         <a href="index.html"><img class="logo" src="./media/logo.png" alt="" srcset="">
         </a>
         <div class="menu">
@@ -24,16 +26,95 @@
             <nav class="menu__nav">
                 <div class="menu__courtain"></div>
                 <ul class="menu__ul">
-                <li class="menu__li"><a class="menu__a" href="/index.html">Inicio</a></li>
-                <li class="menu__li"><a class="menu__a" href="/contacto.html">Contacto</a></li>
-                <li class="menu__li"><a class="menu__a" href="/productos.html">Productos</a></li>
-                <li class="menu__li"><a class="menu__a" href="/nosotros.html">Nosotros</a></li>
-                <li class="menu__li"><a class="menu__a" href="/faq.html">Faq</a></li>
-            </ul>
-        </nav>
+                    <li class="menu__li"><a class="menu__a" href="/index.html">Inicio</a></li>
+                    <li class="menu__li"><a class="menu__a" href="/contacto.html">Contacto</a></li>
+                    <li class="menu__li"><a class="menu__a" href="/productos.html">Productos</a></li>
+                    <li class="menu__li"><a class="menu__a" href="/nosotros.html">Nosotros</a></li>
+                    <li class="menu__li"><a class="menu__a" href="/faq.html">Faq</a></li>
+                </ul>
+            </nav>
 
         </div>
     </header>
+    <main>
+        <section class="third--contact" id="get-in-touch">
+            <div class="third__container third__container--map">
+                <div class="third__ubication">
+                    <h2 class="third__title">¿Dónde se encuentra LIV?</h2>
+                    <p class="third__text">El local central de LIV Aromas, se encuentra en la calle Av. Cordoba 1189, en
+                        Recoleta, Ciudad Autónoma de Buenos Aires. </p>
+                </div>
+                <iframe class="third__gps"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.198242325702!2d-58.38622088423687!3d-34.59914826476456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac7e92486c5%3A0x38aa3f7ace1d1e31!2sAvenida%20C%C3%B3rdoba%20%26%20Libertad%2C%20C1054%20CABA!5e0!3m2!1ses-419!2sar!4v1669089401389!5m2!1ses-419!2sar"
+                    width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    aria-describedby="mapa-ubicacion-local">
+                </iframe>
+            </div>
+        </section>
+        <section class="third__form third--contact third__form--contact">
+            <form class="third__subject third__subject--contact" action="" method="post">
+                <h3 class="third__lead">Formulario de Contacto</h3>
+                <div class="third__profile">
+                    <div class="third__name">
+                        <label for="fullname-contact" hidden="">
+                            <p class="third__par">Nombre/s y Apellido/s</p>
+                        </label>
+                        <input class="third__input" type="text" id="fullname-contact" name="fullname-contact"
+                            pattern="[A-Za-z]{03-15}" autocomplete="on" required="" placeholder="Nombre/s y Apellido/s">
+                    </div>
+
+                    <div class="third__phone">
+                        <label class="third__label" for="phone-contact" hidden="">
+                            <p class="third__par">Nro. de Teléfono</p>
+                        </label>
+                        <input class="third__input" type="tel" id="phone-contact" name="phone-contact" minlength="13"
+                            pattern="[0-9]{1}-[0-9]{4}-[0-9]{8}" autocomplete="on" required=""
+                            placeholder="Nro. de Teléfono">
+                    </div>
+
+                    <div class="third__mail">
+                        <label class="third__label" for="email-contact" hidden="">
+                            <p class="third__par">Casilla de Correo</p>
+                        </label>
+                        <input class="third__input" type="email" id="email-contact" name="email-contact"
+                            placeholder="casilla@correo.com" autocomplete="off" required="">
+                    </div>
+
+                    <div class="third__pet">
+                        <label class="third__label" for="name-pet-contact" hidden="">
+                            <p class="third__par">Nombre del Perro</p>
+                        </label>
+                        <input class="third__input" type="text" id="name-pet-contact" name="name-pet-contact"
+                            pattern="[A-Za-z]{03-15}" required="" placeholder="Nombre del Perro">
+                    </div>
+                </div>
+                <hr class="third__scratch">
+                <div class="third__release">
+                    <p class="third__subtitle">Motivo de tu consulta</p>
+                    <div class="third__motive">
+                        <label class="third__label" for="motive-product"><input class="third__input" type="radio"
+                                id="motive-product" name="motive-product-services" value="motive-product">
+                            <p class="third__par">Productos</p>
+                        </label>
+                        <label class="third__label" for="motive-services"><input class="third__input" type="radio"
+                                id="motive-services" name="motive-product-services" value="motive-services">
+                            <p class="third__par">Servicios</p>
+                        </label>
+                    </div>
+                </div>
+                <hr class="third__scratch">
+                <div class="third__consultation">
+                    <label class="third__label" for="consultation-contact" hidden="">Dejanos aquí tus consultas o
+                        comentarios</label>
+                    <textarea class="third__textarea " id="consultation-contact" name="consultation" cols="35" rows="5"
+                        style="resize:none" placeholder="Dejanos aquí tus consultas o comentarios"
+                        required=""></textarea>
+                </div>
+            </form>
+            <button class="btn btn--contact" type="submit">Enviar</button>
+        </section>
+    </main>
+
 
     <footer>
         <div class="sitemap">
@@ -49,8 +130,11 @@
         </div>
 
         <form class="newsletter" action="">
-            <label class="newsletter__label" for="email-news"><h5>Recibir Novedades</h5></label>
-            <input class="newsletter__input" type="email" id="email-news" name="email-news" placeholder="Tú Correo Aquí" required="">
+            <label class="newsletter__label" for="email-news">
+                <h5>Recibir Novedades</h5>
+            </label>
+            <input class="newsletter__input" type="email" id="email-news" name="email-news" placeholder="Tú Correo Aquí"
+                required="">
             <div>
                 <button class="newsletter__btn" type="submit">Subscripción</button>
             </div>
@@ -58,7 +142,8 @@
 
         <div class="social">
             <ul class="social__ul">
-                <li class="social__li"><a class="social__icon" href="https://www.instagram.com/liv_aromas_/" aria-describedby="boton-instagram"><i class="fa fa-instagram"></i></a>
+                <li class="social__li"><a class="social__icon" href="https://www.instagram.com/liv_aromas_/"
+                        aria-describedby="boton-instagram"><i class="fa fa-instagram"></i></a>
                 </li>
                 <li>
                     <p><a class="social__item" href="https://www.instagram.com/liv_aromas_/">Instagram</a></p>
@@ -69,18 +154,25 @@
         <address class="address">
             <h5 class="address__title">Contáctate</h5>
             <ul class="address__ul">
-                <li class="address__li"><p class="address__par">Teléfono Local:</p><h6 class="address__subtitle">022945456767</h6>
+                <li class="address__li">
+                    <p class="address__par">Teléfono Local:</p>
+                    <h6 class="address__subtitle">022945456767</h6>
                 </li>
-                <li class="address__li"><p class="address__par">E-mail:</p><h6 class="address__subtitle">liv@aromas.com</h6>
+                <li class="address__li">
+                    <p class="address__par">E-mail:</p>
+                    <h6 class="address__subtitle">liv@aromas.com</h6>
                 </li>
-                <li class="address__li"><p class="address__par">Whatsapp:</p><h6 class="address__subtitle">0111153756868</h6>
+                <li class="address__li">
+                    <p class="address__par">Whatsapp:</p>
+                    <h6 class="address__subtitle">0111153756868</h6>
                 </li>
             </ul>
         </address>
-        
+
         <div class="copyright">
             <p class="copyright__text">Derechos Reservados © 2022 LIV</p>
         </div>
     </footer>
 </body>
+
 </html>
