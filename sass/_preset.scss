@@ -7,6 +7,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+ul{
+    list-style: none;
+}
+
 $backgroundColor: linear-gradient(75deg, rgba(199,178,134,1) 0%, rgba(221,176,83,1) 35%, rgba(157,115,30,1) 100%);
 $textColor: #fffefc;
 $fontColor: #fffefc;

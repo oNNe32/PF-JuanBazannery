@@ -1,6 +1,6 @@
 footer {
     margin-top: 100px;
-    height: 742px;
+    height: 1100px;
     padding-top: 2em;
     background: rgb(199,178,134);
     background: $backgroundColor;
@@ -10,7 +10,7 @@ footer {
     align-items: center;
 
     @include breakpoint(viewMiddle) {
-        height: 642px;
+        height: 768px;
         display: grid;
         grid-template-columns: [x0] 2fr [x1] 1fr [x2] 2fr [x3];
         grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
