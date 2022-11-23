@@ -360,4 +360,285 @@ footer {
   .copyright__text {
     font-size: 1.1em;
   }
+}
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/* MARKETING CONTENT
+    -------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+/* rtl:end:ignore */
+/* Featurettes
+    ------------------------- */
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -0.05rem;
+}
+
+.zoom {
+  transition: 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.75);
+}
+
+.nostitulo {
+  margin-top: 15px;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.nosotrosdesc {
+  margin: 50px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.address {
+  margin-top: 65px;
+}
+
+.sitemap__ul {
+  list-style: none;
+}
+
+/*CONTACTO- EL DROPDOWN DE FAQ*/
+.faq {
+  width: 90vw;
+  margin: 5vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.faq__framing {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  border: solid 5px rgba(255, 255, 255, 0.6039215686);
+  border-radius: 0% 0% 70% 0%;
+  background: linear-gradient(56deg, rgba(230, 188, 4, 0.795) 0%, rgba(243, 204, 30, 0.856) 50%, rgba(247, 203, 9, 0.89) 100%);
+  -webkit-animation: floating 5s alternate infinite;
+          animation: floating 5s alternate infinite;
+}
+
+@media (min-width: 768px) {
+  .faq__framing {
+    height: 120vh;
+  }
+}
+@media (min-width: 768px) {
+  .faq__framing {
+    height: 140vh;
+  }
+}
+.faq__cover {
+  width: 90vw;
+}
+
+.faq__title {
+  margin-top: 50px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5em;
+  font-weight: bolder;
+  font-style: normal;
+  text-shadow: none 2px -2px 2px;
+  color: #FDFFFC;
+  background: linear-gradient(56deg, rgba(189, 123, 2, 0.747) 0%, rgba(255, 208, 0, 0.815) 50%, rgba(189, 123, 2, 0.747) 100%);
+  border: solid 5px rgba(255, 255, 255, 0.6039215686);
+  -webkit-animation: floating 5s alternate infinite;
+          animation: floating 5s alternate infinite;
+  font-weight: bolder;
+  text-align: center;
+  padding: 2em;
+}
+
+@media (min-width: 768px) {
+  .faq__title {
+    font-size: 2.2em;
+  }
+}
+@media (min-width: 1024px) {
+  .faq__title {
+    font-size: 3em;
+  }
+}
+.faq__text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: none -2px 2px 2px;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  padding: 1em;
+}
+
+@media (min-width: 768px) {
+  .faq__text {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1024px) {
+  .faq__text {
+    font-size: 1.6em;
+  }
+}
+.faq__accordion {
+  margin: 15px;
+  width: 90vw;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.899597) 0%, rgba(236, 236, 236, 0.950018) 100%);
+  border: solid 2px #FFF;
+  border-radius: 0.6em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.faq__lead {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: rgba(0, 0, 0, 0.809);
+  color: #020100;
+  padding: 1em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .faq__lead {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 1024px) {
+  .faq__lead {
+    font-size: 1.8em;
+  }
+}
+.faq__answer {
+  padding: 1em;
+}
+
+.faq__inputs {
+  display: none;
+}
+
+.faq__inputs:checked ~ .faq__par {
+  height: auto;
+  margin: 1em 0em;
+  color: #020100;
+}
+
+.faq__inputs:checked ~ .faq__label {
+  transition: 1s ease-in-out;
+  box-shadow: 0px 20px 5px rgba(128, 128, 128, 0.748);
+}
+
+.faq__label {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: none -2px 2px 2px;
+  color: #020100;
+  display: block;
+  padding: 0.2em;
+  background: rgba(170, 170, 170, 0.672);
+  box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.748);
+  border: solid 2px #e4e4e4;
+  border-radius: 0.6em;
+  text-align: center;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .faq__label {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 1024px) {
+  .faq__label {
+    font-size: 1.6em;
+  }
+}
+.faq__par {
+  height: 0;
+  overflow: hidden;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 0.8em;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: none -2px 2px 2px;
+  color: rgba(236, 236, 236, 0);
+  font-weight: lighter;
+  transition: 1s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .faq__par {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 1024px) {
+  .faq__par {
+    font-size: 1.5em;
+  }
 }/*# sourceMappingURL=styles.css.map */
